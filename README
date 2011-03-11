@@ -1,0 +1,11 @@
+#########################
+# lotus-notes_gtk2.23.3 #
+#########################
+
+Type 'make' to build the library. Remember to have libgtk+ headers installed.
+
+To install copy the files 'notes-wrapper' and 'libnotesgtkfix.so' to the
+location of the 'notes' binary. For me it is in /opt/ibm/lotus/notes, but
+for you it might be different.
+
+Now fire up Lotus Notes with the 'notes-wrapper'-script instead of 'notes'.
