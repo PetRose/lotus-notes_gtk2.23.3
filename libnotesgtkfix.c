@@ -18,8 +18,8 @@ void gdk_window_shape_combine_region (GdkWindow *window, const GdkRegion *shape_
 	if (_gdk_window_shape_combine_region == NULL)
 		_gdk_window_shape_combine_region =  dlsym(RTLD_NEXT, "gdk_window_shape_combine_region");
 
-	// In the real 'gdk_window_shape_combine_region' this exact conditio returns without doing anything
-	// So se shaped to 1 to force not returning.
+	// In the real 'gdk_window_shape_combine_region' this exact condition returns without doing anything
+	// So set shaped to 1 to force not returning.
 	if (!private->shaped && shape_region == NULL)
 		private->shaped = 1;
 
