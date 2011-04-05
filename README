@@ -9,3 +9,7 @@ location of the 'notes' binary. For me it is in /opt/ibm/lotus/notes, but
 for you it might be different.
 
 Now fire up Lotus Notes with the 'notes-wrapper'-script instead of 'notes'.
+
+With the current version of Lotus Notes (8.5.2) on linux the systemwide
+desktop-files is at /usr/share/applications/LotusNotes8.5.desktop. Editing that
+files changing the shortcut there, will make notes run for all local users.
