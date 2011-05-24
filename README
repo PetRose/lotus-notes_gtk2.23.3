@@ -4,6 +4,15 @@
 
 Type 'make' to build the library. Remember to have libgtk+ headers installed.
 
+On Ubuntu the required libraries can be installed by running the following
+command.
+
+   $ sudo apt-get install libgtk2.0-dev
+
+On 64bit Ubuntu g++-multilib also needs to be installed.
+
+   $ sudo apt-get install g++-multilib
+
 To install copy the files 'notes-wrapper' and 'libnotesgtkfix.so' to the
 location of the 'notes' binary. For me it is in /opt/ibm/lotus/notes, but
 for you it might be different.
