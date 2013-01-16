@@ -1,9 +1,15 @@
-#########################
-# lotus-notes_gtk2.23.3 #
-#########################
+#####################
+lotus-notes_gtk2.23.3
+#####################
 
-Type 'make' to build the library. Remember to have libgtk+ headers installed.
+Recent versions of Ubuntu and most likely all other distributions package
+GTK 2.23.3 ir higher. That version contains an optimization that somehow
+breaks Lotus Notes making it unable to draw things correctly on the screen.
+Things tend to get drawn as gray areas instead of real content. This
+software works around that problem.
 
+Prerequisites
+-------------
 On Ubuntu the required libraries can be installed by running the following
 command.
 
@@ -13,6 +19,16 @@ On 64bit Ubuntu g++-multilib also needs to be installed.
 
    $ sudo apt-get install g++-multilib
 
+
+Installation
+------------
+Run 'make' to build the library. Remember to have all the required libraries
+installed. Then run 'sudo make install' to install the files and modify the
+desktop-file. You can now run Lotus Notes from application-menu on your desktop.
+
+
+Manual installation
+-------------------
 To install copy the files 'notes-wrapper' and 'libnotesgtkfix.so' to the
 location of the 'notes' binary. For me it is in /opt/ibm/lotus/notes, but
 for you it might be different.
