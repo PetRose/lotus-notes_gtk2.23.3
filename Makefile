@@ -1,8 +1,10 @@
+override CFLAGS  += -Wall -Wextra `pkg-config --cflags gtk+-2.0` -shared
+override LDFLAGS += -ldl
 
 all: libnotesgtkfix.so
 
 libnotesgtkfix.so: libnotesgtkfix.c
-	gcc -Wall -Wextra -m32 `pkg-config --cflags gtk+-2.0` -shared libnotesgtkfix.c -o libnotesgtkfix.so -ldl
+	${CC} ${CFLAGS} -o $@ $< ${LDFLAGS}
 
 install: all
 	install -m 644 libnotesgtkfix.so /opt/ibm/lotus/notes
