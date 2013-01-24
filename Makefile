@@ -1,4 +1,4 @@
-override CFLAGS  += -Wall -Wextra `pkg-config --cflags gtk+-2.0` -shared
+override CFLAGS  += -Wall -Wextra `pkg-config --cflags gtk+-2.0` -shared -m32
 override LDFLAGS += -ldl
 
 all: libnotesgtkfix.so
