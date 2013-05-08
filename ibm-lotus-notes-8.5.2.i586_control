@@ -1,0 +1,11 @@
+Package: ibm-lotus-notes
+Version: 8.5.2-20100811.1131
+Section: IBM
+Priority: extra
+Architecture: i386
+Depends: libart-2.0-2, libasound2, libatk1.0-0, libbonobo2-0, libbonoboui2-0, libc6, libcups2, libfontconfig1, libfreetype6, libgcc1, libgconf2-4, libgtk2.0-0, libglib2.0-0, libgnome2-0, libgnomecanvas2-0, libgnome-desktop-2 | libgnome-desktop-2-7 | libgnome-desktop-2-11 | libgnome-desktop-2-17, libgnomeprint2.2-0, libgnomeprintui2.2-0, libgnomeui-0, libgnomevfs2-0, libglib2.0-0, libice6, libjpeg62, liborbit2, libpam0g, libpango1.0-0, libpng12-0, libpopt0, libsm6, libstdc++6, libx11-6, libxcursor1, libxext6, libxft2, libxi6, libxkbfile1, libxml2, libxp6, libxrender1, libxss1, libxt6, libxtst6, libz1
+Recommends: ttf-xfree86-nonfree
+Installed-Size: 633888
+Maintainer: IBM Lotus Product <sw_support@us.ibm.com>
+Description: IBM Lotus Notes
+ IBM Lotus Notes software provides a robust and productive user experience with a single point of access to email, calendars, contacts, activities, instant messaging, feeds, office documents, collaboration tools, and business applications. Loaded with new features to help you work smarter, the new user interface presents the tools you need, when and where you need them. Plus, you get quick access to your business information in one integrated view, in the context of the work you're doing. That means you get your job done faster, and easier. You can also install the following optional features once you have installed IBM Lotus Notes: IBM Lotus Sametime, IBM Lotus Composite Application Editor, IBM Lotus Connections, IBM Lotus Symphony.
