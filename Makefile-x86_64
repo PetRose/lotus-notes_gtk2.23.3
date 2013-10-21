@@ -1,0 +1,14 @@
+# Modificado por Pedro Flor (pedro.flor _at_ gmail.com) para dar soporte a x86_64
+# 21.01.2013
+all: libnotesgtkfix.so
+
+libnotesgtkfix.so: libnotesgtkfix.c
+  gcc -Wall -Wextra -m64 `pkg-config --cflags gtk+-2.0` -shared libnotesgtkfix.c -o libnotesgtkfix.so -ldl -fPIC
+
+install: all
+	install -m 644 libnotesgtkfix.so /opt/ibm/lotus/notes
+	install -m 755 notes-wrapper     /opt/ibm/lotus/notes
+	sed -i -e '/Exec=/ s/notes /notes-wrapper /' /usr/share/applications/LotusNotes8.5.desktop
+
+clean:
+	rm -f libnotesgtkfix.so
