@@ -7,7 +7,7 @@ minimumcontrolfile="ibm-notes-9.0.1.minimum.i586_control"
 
 if [ -f "$fixedfile" ] || [ -f "$tempfile" ];  then
 	echo "You have already a workfiles in directory."
-    echo "You have have to remove $fixedfile and $tempfile before running script."
+    echo "You have to remove $fixedfile and $tempfile before running script."
 	echo "Aborts script..."
 	exit 1
 fi
