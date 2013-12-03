@@ -1,0 +1,11 @@
+Package: ibm-notes
+Version: 9.0.1-20131022.1138
+Section: Office
+Priority: extra
+Architecture: i386
+Conflicts: ibm-notes-hotfix, ibm-notes-fixpack (<< 8.5.4), ibm-lotus-activities, ibm-lotus-cae, ibm-cae, ibm-lotus-feedreader, ibm-lotus-sametime, ibm-lotus-symphony, ibm-lotus-notes-fixpack, ibm-lotus-notes-hotfix, ibm-lotus-notes
+Replaces: ibm-notes-fixpack, ibm-lotus-activities, ibm-lotus-cae, ibm-cae, ibm-lotus-feedreader, ibm-lotus-sametime, ibm-lotus-symphony, ibm-lotus-notes-fixpack, ibm-lotus-notes-hotfix, ibm-lotus-notes
+Installed-Size: 833960
+Maintainer: IBM Product <sw_support@us.ibm.com>
+Description: IBM Notes
+ IBM Notes software provides a robust and productive user experience with a single point of access to email, calendars, contacts, activities, instant messaging, feeds, collaboration tools, and business applications. Loaded with new features to help you work smarter, the new user interface presents the tools you need, when and where you need them. Plus, you get quick access to your business information in one integrated view, in the context of the work you're doing. That means you get your job done faster, and easier. You can also install the following optional features once you have installed IBM Notes: IBM Sametime, IBM Connections, IBM Feedreader, IBM OpenSocial.
