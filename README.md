@@ -51,8 +51,9 @@ but also these:
 	libgnomeui-0 libmotif3 libgnome-desktop-3-0 gtk2-engines-aurora libxext6
 	libgnome2-common gnome-keyring
 (according to : http://rayslinux.blogspot.dk/2013/11/creating-mint-15-workstation-server.html)
+To be sure you get it right too, I attach also the dpkg listing of the packages whereby this works on (my only) Linux 32-bit Linux Mint.
 
-Then copy the 'minimum' debian CONTROL file here
+Once assured, then copy the 'minimum' debian CONTROL file here
 	ibm-notes-9.0.1.minimum.i586_control
 into same folder where you should run the fix script. 
 
