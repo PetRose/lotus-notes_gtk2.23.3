@@ -3,7 +3,8 @@ General instructions to get Lotus/IBM Notes to install
 
 Lotus/IBM Notes is generally only supported on LTS-version of Ubuntu, and
 since packagenames tends to change over releases typically deb-files
-like this will typically fail to because of their specific package requirements.
+like this will typically fail to install because of their specific package
+requirements.
 
 Cases are that the thing will work just fine, no matter what name the CUPS
 printing system package is called.
@@ -18,6 +19,18 @@ Notes debian-packages.
 All scripts will unpack the package and created an additional one postfixed
 with 'fixed'. Install the fixed package and everything should be ready to
 for performing the next setup steps.
+
+Distro compatability
+====================
+
+The following distros are verified to work.
+
+* Ubuntu 13.04
+* Ubuntu 13.10
+* Ubuntu 14.04 (currently in development)
+
+Even though your distro is not a part of these cases are that it will work
+anyway. Please report if you have success/failure on other distros.
 
 Installation
 -------------
