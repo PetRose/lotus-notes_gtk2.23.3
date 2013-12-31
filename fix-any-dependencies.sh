@@ -36,11 +36,10 @@ read answer
 
 if [ "$answer" = "y" ]; then
 	rm -rf $tempfile
-	echo "Temporary debian folder $tempfile removed."
+	echo "Temporary debian directory $tempfile removed."
 else
-	echo "Remember to delete the folder (after watching) the temporary debian folder:"
-	echo "   $tempfile"
+	echo "Remember to manually delete temporary directory $tempfile after successful completion."
 fi
-echo "You should now be able to make a debian install using command:"
+echo "You will now be able to install on a debian based system using command:"
 echo "   sudo dpkg -i $fixedfile"
 exit 0
