@@ -1,35 +1,38 @@
 General instructions to get Lotus/IBM Notes to install
 ======================================================
 
-Lotus/IBM Notes is generally only supported on LTS-version of Ubuntu, and
-since packagenames tends to change over releases typically deb-files
-like this will typically fail to install because of their specific package
-requirements.
+Lotus/IBM Notes is generally only supported on LTS-version of Ubuntu. Since
+package names tend to change over releases, deb-files like this will typically
+fail to install because of their specific package requirements.
 
-Cases are that the thing will work just fine, no matter what name the CUPS
-printing system package is called.
+Chances are that things will work just fine, no matter what name the CUPS
+printing system package is.
 
-So there are three scripts that can be used to fix dependencies in Lotus/IBM
-Notes debian-packages.
+There are three scripts that can be used to fix dependencies in Lotus/IBM
+Notes on debian based systems, more specifically Ubuntu.
 
-   * fix-9.0.1-dependencies.sh to fix ibm-notes-9.0.1.i586.deb
-   * fix-9.0.0-dependencies.sh to fix ibm-notes-9.0.i586.deb
-   * fix-8.5.2-dependencies.sh to fix ibm-lotus-notes-8.5.2.i586.deb
+* fix-9.0.1-dependencies.sh to fix ibm-notes-9.0.1.i586.deb
+* fix-9.0.0-dependencies.sh to fix ibm-notes-9.0.i586.deb
+* fix-8.5.2-dependencies.sh to fix ibm-lotus-notes-8.5.2.i586.deb
 
-All scripts will unpack the package and created an additional one postfixed
-with 'fixed'. Install the fixed package and everything should be ready to
-for performing the next setup steps.
+All scripts will unpack the package and create new ones postfixed with 'fixed'.
+Install the fixed package and everything should be ready for the next setup steps.
 
 Distro compatability
 ====================
 
-The following distros are verified to work.
+The following distros have been verified:
 
 * Ubuntu 13.04
 * Ubuntu 13.10
 * Ubuntu 14.04 (currently in development)
 
-* openSUSE 13.1 (for Lotus Notes 9.0 and oxygen-gtk while using KDE)
+The following distro have been verified to work with 9.0.X
+
+* openSUSE 13.1 (oxygen-gtk in KDE with notes-wrapper-gtk2-rc)
+
+The following distro has been verified to work with 8.5.X
+* openSUSE 12.3 (for Lotus Notes 8.5.2 & 8.5.3 with notes-wrapper-libgtk-fix)
 
 Even though your distro is not a part of these cases are that it will work
 anyway. Please report if you have success/failure on other distros.
@@ -68,7 +71,8 @@ crash after sending email and many other places too. Selecting another theme
 avoids the crash - but do you realy whant to look at firefox in Raleigh?
 
 Luckily this can be fixed by unsetting the GTK2_RC_FILES environment variable
-before starting Notes.
+prior to starting notes, or by selecting a GTK theme other than oxygen-gtk in:
+Configure Desktop --> Application Apperance --> GTK
 
 Installation
 ------------
@@ -79,9 +83,14 @@ variable.
 Installation - openSUSE 13.1
 ----------------------------
 
-You can install the notes-wrapper rpm for Lotus Notes 9.0.X to null GTK2_RC_FILES
-by installing notes-wrappper-gtk2-rc from the following repository:
+You can install the notes-wrapper script via an rpm to null GTK2_RC_FILES by
+installing notes-wrappper-gtk2-rc from the following repository:
 http://download.opensuse.org/repositories/home:/eclipseagent:/lotus_notes/openSUSE_13.1/
+
+This can be done by adding the repository, then running
+   $ sudo zypper in notes-wrapper-gtk2-rc
+
+The RPM will update the IBM Notes related .desktop files.
 
 For Lotus Notes 8.5.x
 =====================
@@ -103,13 +112,22 @@ On 64bit Ubuntu g++-multilib also needs to be installed.
 
    $ sudo apt-get install g++-multilib
 
-
 Installation
 ------------
 Run 'make' to build the library. Remember to have all the required libraries
 installed. Then run 'sudo make install85' to install the files and modify the
 desktop-file. You can now run Lotus Notes from application-menu on your desktop.
 
+Installation - openSUSE 12.3
+----------------------------
+You can install the notes-wrapper script and related gtk fixes via an rpm by
+installing notes-wrappper-libgtk-fix from the following repository:
+http://download.opensuse.org/repositories/home:/eclipseagent:/lotus_notes/openSUSE_12.3/
+
+This can be done by adding the repository, then running
+   $ sudo zypper in notes-wrapper-libgtk2-fix
+   
+The RPM will update the Lotus Notes related .desktop files.
 
 Manual installation
 -------------------
