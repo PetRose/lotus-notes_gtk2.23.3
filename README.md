@@ -25,7 +25,8 @@ The following distros have been verified:
 
 * Ubuntu 13.04
 * Ubuntu 13.10
-* Ubuntu 14.04 (currently in development)
+* Ubuntu 14.04
+* Ubuntu 14.10
 
 The following distro have been verified to work with 9.0.X
 
