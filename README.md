@@ -27,6 +27,8 @@ The following distros have been verified:
 * Ubuntu 13.10
 * Ubuntu 14.04
 * Ubuntu 14.10
+* Debian 7
+* Debian 8
 
 The following distro have been verified to work with 9.0.X
 
