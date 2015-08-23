@@ -3,7 +3,7 @@ Version: 9.0.1-20131022.1138
 Section: Office
 Priority: extra
 Architecture: i386
-Pre-Depends: libart-2.0-2, libasound2, libatk1.0-0, libbonobo2-0, libbonoboui2-0, libc6, libfontconfig1, libfreetype6, libgcc1, libgconf2-4, libgtk2.0-0, libglib2.0-0, libgnome2-0, libgnomecanvas2-0, libgnome-desktop-2 | libgnome-desktop-2-7 | libgnome-desktop-2-11 | libgnome-desktop-2-17 | libgnome-desktop-3-2, libgnomeui-0, libgnomevfs2-0, libglib2.0-0, libice6, libjpeg62, liborbit2, libpam0g, libpango1.0-0, libpng12-0, libpopt0, libsm6, libstdc++6, libx11-6, libxcursor1, libxext6, libxft2, libxi6, libxkbfile1, libxml2, libxp6, libxrender1, libxss1, libxt6, libxtst6, libz1
+Pre-Depends: libart-2.0-2, libasound2, libatk1.0-0, libbonobo2-0, libbonoboui2-0, libc6, libfontconfig1, libfreetype6, libgcc1, libgconf2-4, libgtk2.0-0, libglib2.0-0, libgnome2-0, libgnomecanvas2-0, libgnome-desktop-2 | libgnome-desktop-2-7 | libgnome-desktop-2-11 | libgnome-desktop-2-17 | libgnome-desktop-3-2, libgnomeui-0, libgnomevfs2-0, libglib2.0-0, libice6, libjpeg62, liborbit2, libpam0g, libpango1.0-0, libpng12-0, libpopt0, libsm6, libstdc++6, libx11-6, libxcursor1, libxext6, libxft2, libxi6, libxkbfile1, libxml2, libxrender1, libxss1, libxt6, libxtst6, libz1
 Recommends: ttf-xfree86-nonfree
 Conflicts: ibm-notes-hotfix, ibm-notes-fixpack (<< 8.5.4), ibm-lotus-activities, ibm-lotus-cae, ibm-cae, ibm-lotus-feedreader, ibm-lotus-sametime, ibm-lotus-symphony, ibm-lotus-notes-fixpack, ibm-lotus-notes-hotfix, ibm-lotus-notes
 Replaces: ibm-notes-fixpack, ibm-lotus-activities, ibm-lotus-cae, ibm-cae, ibm-lotus-feedreader, ibm-lotus-sametime, ibm-lotus-symphony, ibm-lotus-notes-fixpack, ibm-lotus-notes-hotfix, ibm-lotus-notes
